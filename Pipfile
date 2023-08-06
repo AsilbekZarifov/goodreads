@@ -12,6 +12,7 @@ celery = "*"
 djangorestframework = "*"
 gunicorn = "==19.9"
 heroku = "*"
+django-heroku = "*"
 
 [dev-packages]
 

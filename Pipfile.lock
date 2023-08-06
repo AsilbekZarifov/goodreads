@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "df02d58e6de9b9d66237179cc419bf7364e4dafe75278a38d5c4ba9bc8503c4c"
+            "sha256": "37cfd30eb63d1ea684b1c2eab0595c8fc35927f667db300d5376da5f37d149f7"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -184,6 +184,13 @@
             "index": "pypi",
             "version": "==0.7"
         },
+        "dj-database-url": {
+            "hashes": [
+                "sha256:9c9e5f7224f62635a787e9cc3c6762c9be2b19541a21e3c08fa573bd01609b4b",
+                "sha256:a35a9f0f43775ca6f90d819dc456233ef7bcc76b47377d5d908b75c7eb320624"
+            ],
+            "version": "==2.0.0"
+        },
         "django": {
             "hashes": [
                 "sha256:7e4225ec065e0f354ccf7349a22d209de09cc1c074832be9eb84c51c1799c432",
@@ -199,6 +206,14 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==2.0"
+        },
+        "django-heroku": {
+            "hashes": [
+                "sha256:2bc690aab89eedbe01311752320a9a12e7548e3b0ed102681acc5736a41a4762",
+                "sha256:6af4bc3ae4a9b55eaad6dbe5164918982d2762661aebc9f83d9fa49f6009514e"
+            ],
+            "index": "pypi",
+            "version": "==0.3.1"
         },
         "djangorestframework": {
             "hashes": [
@@ -365,6 +380,14 @@
             "markers": "python_version >= '3.5'",
             "version": "==0.4.4"
         },
+        "typing-extensions": {
+            "hashes": [
+                "sha256:440d5dd3af93b060174bf433bccd69b0babc3b15b1a8dca43789fd7f61514b36",
+                "sha256:b75ddc264f0ba5615db7ba217daeb99701ad295353c45f9e95963337ceeeffb2"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==4.7.1"
+        },
         "tzdata": {
             "hashes": [
                 "sha256:11ef1e08e54acb0d4f95bdb1be05da659673de4acbd21bf9c69e94cc5e907a3a",
@@ -395,6 +418,14 @@
                 "sha256:a5220780a404dbe3353789870978e472cfe477761f06ee55077256e509b156d0"
             ],
             "version": "==0.2.6"
+        },
+        "whitenoise": {
+            "hashes": [
+                "sha256:15fe60546ac975b58e357ccaeb165a4ca2d0ab697e48450b8f0307ca368195a8",
+                "sha256:16468e9ad2189f09f4a8c635a9031cc9bb2cdbc8e5e53365407acf99f7ade9ec"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==6.5.0"
         }
     },
     "develop": {}
