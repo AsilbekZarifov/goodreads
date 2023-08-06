@@ -10,7 +10,7 @@ psycopg2 = "*"
 crispy-bootstrap5 = "*"
 celery = "*"
 djangorestframework = "*"
-gunicorn = "*"
+gunicorn = "==19.9"
 heroku = "*"
 
 [dev-packages]
