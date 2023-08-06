@@ -81,6 +81,7 @@ WSGI_APPLICATION = 'goodreads.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -92,6 +93,9 @@ DATABASES = {
     }
 }
 
+DATABASES = {
+    'default': dj_database_url.config(default='postgres://vagrant:vagrant@localhost:5432/microblog')
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
