@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block title %} Confirm Delete Review {% endblock %}
+
+{% block content %}
+  <h3>This page is about Author's bio </h3>
+    <span class="fst-italic">
+                <b>Author is</b>
+                {% for book_author in book.bookauthor_set.all %}
+                    {% if forloop.last %}
+                        <a style="color:DodgerBlue;">{{ book_author.author.full_name }} </a> <br>
+                        <a >{{ book_author.author.bio }} </a>
+                    {% else %}
+                        <a>{{ book_author.author.full_name }},</a>
+                    {% endif %}
+                {% endfor %}
+    </span>
+
+{% endblock%}

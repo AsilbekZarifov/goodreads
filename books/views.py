@@ -7,7 +7,7 @@ from django.views import View
 from django.views.generic import ListView, DetailView
 
 from books.forms import BookReviewForm
-from books.models import Book, BookReview
+from books.models import Book, BookReview, Author, BookAuthor
 
 
 # class BooksView(ListView):
@@ -102,3 +102,10 @@ class DeleteReviewView(LoginRequiredMixin, View):
         messages.success(request, "You have successfully deleted this comment")
 
         return redirect(reverse('books:detail', kwargs={"id": book.id}))
+
+class AuthorinformView(LoginRequiredMixin, View):
+    def get(self,request, book_id):
+        book = Book.objects.get(id=book_id)
+        bio = BookAuthor
+
+        return render(request, "books/inform.html", {"book": book ,'bio':bio})

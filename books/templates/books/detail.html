@@ -26,9 +26,9 @@
                 Authored by
                 {% for book_author in book.bookauthor_set.all %}
                     {% if forloop.last %}
-                        {{ book_author.author.full_name }}
+                        <a href="{% url 'books:inform' book.id %}">{{ book_author.author.full_name }}</a>
                     {% else %}
-                        {{ book_author.author.full_name }},
+                        <a href="#">{{ book_author.author.full_name }},</a>
                     {% endif %}
                 {% endfor %}
             </span>

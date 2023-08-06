@@ -9,8 +9,8 @@ def send_welcome_email(sender, instance, created, **kwargs):
     print("Created", created)
     if created:
         send_mail(
-            "Welcome to Welcome to National  University of uzbekistan ",
-            f"hi {instance.username}. Welcome to National  University of uzbekistan ",
+            "Welcome to Goodreads clone ",
+            f"hi {instance.username}. Welcome to Goodreads clone ",
             "asilprogrammer@gmail.com",
             [instance.email]
         )
